@@ -28,17 +28,18 @@ public class Main {
         byte eggsCount = 4;
         byte eggWeight = 70;
 
-        float breakfastWeight = bananaCount * bananaWeight + milkCount * milkDensity + icecreamCount * icecreamWeight + eggsCount * eggWeight;
+        float breakfastWeight = bananaCount * bananaWeight + milkCount * milkDensity + icecreamCount * icecreamWeight
+                + eggsCount * eggWeight;
         float breakfastWeightKilo = breakfastWeight / 1000;
         System.out.println("Общий вес завтрака спортсмена равен " + breakfastWeight + " грамм или " + breakfastWeightKilo + " килограмм");
 
         //task 4
         byte loseWeightKilo = 7;
         int loseWeightGram = loseWeightKilo * 1000;
-        short minlLosePerDayGram = 250;
+        short minLosePerDayGram = 250;
         short maxLosePerDayGram = 500;
 
-        int maxDaysToLoseWeight = loseWeightGram / minlLosePerDayGram;
+        int maxDaysToLoseWeight = loseWeightGram / minLosePerDayGram;
         int minDaysToLoseWeight = loseWeightGram / maxLosePerDayGram;
         int averageDaysToLoseWeight = (minDaysToLoseWeight + maxDaysToLoseWeight) / 2;
 
@@ -46,7 +47,7 @@ public class Main {
                 maxDaysToLoseWeight + " дней. \nВ среднем добиться результата похуденя спортсмен сможет через "
                 + averageDaysToLoseWeight + " дней");
 
-        //task5
+        //task 5
         int mariaMonthSalary = 67760;
         int denisMonthSalary = 83690;
         int kristinaMonthSalary = 76230;
@@ -62,5 +63,30 @@ public class Main {
         System.out.println("Маша теперь получает " + mariaNewMonthSalary + " рублей. Годовой доход вырос на " + mariaAnnualSalaryUp +" рублей");
         System.out.println("Денис теперь получает " + denisNewMonthSalary + " рублей. Годовой доход вырос на " + denisAnnualSalaryUp +" рублей");
         System.out.println("Кристина теперь получает " + kristinaNewMonthSalary + " рублей. Годовой доход вырос на " + kristinaAnnualSalaryUp +" рублей");
+
+        //task 6
+        byte a = 12;
+        byte b = 27;
+        byte c = 44;
+        byte d = 15;
+        byte e = 9;
+
+        int result = a * (b + (c - d * e));
+        result = result * -1;
+        System.out.println(result);
+
+        //task 7
+        int f = 5;
+        int j = 7;
+        System.out.println(f + " " + j);
+        f = f + j;
+        j = f - j;
+        f = f - j;
+        System.out.println(f + " " + j);
+
+        //task 8
+        int k = 739;
+        int l = (k % 100 - k % 10) / 10;
+        System.out.println(l);
     }
 }
